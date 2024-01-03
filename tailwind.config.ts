@@ -7,7 +7,7 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   prefix: "",
   theme: {
     container: {
@@ -18,46 +18,6 @@ const config = {
       },
     },
     extend: {
-      colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-      },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -73,6 +33,32 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
+    colors: {
+      white: "#fff",
+      primary: "#BFAFF2",
+      secondary: "#F8D57E",
+      background: "#2B2B2B",
+      grey: "#ffffff66",
+      dark: "#2B2B2B"
+    },
+    borderRadius: {
+     normal: "0.9375rem",
+     large: "1.25rem",
+     full: "100%"
+    },
+    lineHeight: {
+      large: "5.625rem",
+      normal: "2rem",
+      medium: "2.5rem",
+    },
+    fontSize: {
+      normal: "1.125rem",
+      large: "3.75rem",
+      medium: "2.5rem",
+    },
+    gap: {
+      large: "3.75rem"
+    }
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config
