@@ -14,7 +14,7 @@ function HeroSection() {
   return (
     <MainLayoutCard
       title={Header}
-      description="This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com"
+      description="This is a template Figma file, turned into code by Prashant.😎"
       rightSideImageUrl="/images/overview.gif"
     />
   );
