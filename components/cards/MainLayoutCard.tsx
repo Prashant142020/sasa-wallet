@@ -1,5 +1,6 @@
 import React from "react";
 import MainButton from "../common/MainButton";
+import Image from "next/image";
 
 interface IProps {
   title: () => React.JSX.Element;
@@ -27,7 +28,9 @@ function MainLayoutCard({ title, description, rightSideImageUrl }: IProps) {
         </div>
       </div>
       <div>
-        <img
+        <Image
+          width={600}
+          height={600}
           src={rightSideImageUrl}
           className="rounded-normal md:max-w-[31.25rem]"
           alt="overview"
